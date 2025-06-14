@@ -1,0 +1,76 @@
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --accent-color: #0077cc;
+    --max-width: 800px;
+    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.781);
+    background-image: url('../assets/image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 4rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recuo {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.recuo2 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+ul {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    main {
+    margin: 1rem;
+    }
+}
